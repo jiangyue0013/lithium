@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lithium</title>
+    </head>
+    <body>
+        <h1>Lithium 首页</h1>
+        <ul>
+            <li>队名 - 胜场 - 积分 - 净胜球</li>
+            {% for team in teams %}
+                <li>{{ team.name }} - {{ team.victory }} - {{ team.score }} - {{ team.goal_difference }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
